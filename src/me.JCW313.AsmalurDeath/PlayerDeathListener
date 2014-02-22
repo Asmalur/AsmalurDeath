@@ -1,0 +1,18 @@
+package me.JCW313.AsmalurDeath;
+
+import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
+
+public class PlayerDeathListener implements Listener {
+	public static AsmalurDeath plugin;
+	
+	@EventHandler
+	public void PlayerDeath(PlayerDeathEvent event) {
+		Player p = event.getEntity();
+		event.setDeathMessage(" " + p.getDisplayName() + ChatColor.ITALIC + " was killed by " + p.getKiller().getDisplayName());
+	}
+
+}
