@@ -1,0 +1,5 @@
+name: AsmalurDeath
+main: me.JCW313.AsmalurDeath.AsmalurDeath
+version: 1.0.0
+description: >
+             Sends a death message to the playerbase.
